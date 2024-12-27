@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', cursive;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*======heading part start here=====*/
+.header{
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 22222;
+}
+.header .logo{
+    width: 20%;
+}
+.header .logo img{
+    width: 70%;
+}
+.header .menu{
+    width: 60%;
+}
+.header .menu ul li{
+    display: inline-block;
+    margin-left: 26px;
+}
+.header .menu ul{
+    float: right;
+    line-height: 70px;
+}
+.header .menu ul li a{
+    display: block;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.header .menu ul li a:hover{
+    color: rgb(218, 153, 164);
+}
+.header .card-icon{
+    width: 20%;
+}
+.header .card-icon a i{
+    float: right;
+    line-height: 70px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: pink;
+}
+
+/*======heading part end here=====*/
+/*======banner part start here=====*/
+.banner{
+    padding: 180px 0;
+    background-image: url(images/bg-img-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner h1{
+    color: pink;
+    font-size: 40px;
+    line-height: 60px;
+}
+.banner h2{
+    color: #444;
+    line-height: 50px;
+    width: 50%;
+}
+.banner p{
+    width: 60%;
+    line-height: 30px;
+    margin-top: 20px;
+    color: rgb(192, 142, 151);
+}
+.banner a{
+    padding: 14px 50px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: pink;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+.banner a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(218, 143, 156);
+    transition: .3s;
+    z-index: -1;
+    border-radius: 4px;
+    border: none;
+}
+.banner a:hover::after{
+    width: 100%;
+}
+/*======banner part end here=====*/
+/*======slider part start here=====*/
+.slider{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, .3);
+    margin-top: -30px;
+    border: 5px solid pink;
+    border-radius: 4px;
+}
+.slider .owl-slider img{
+    width: 100%;
+    height: 390px;
+}
+/*======slider part end here=====*/
+/*======product part start here=====*/
+.product{
+    padding: 100px 0;
+}
+.product h1{
+    color: #444;
+    text-align: center;
+    font-size: 35px;
+}
+.product p{
+    text-align: center;
+    color: rgb(209, 141, 152);
+    margin-top: 10px;
+}
+.product .product-card{
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 40px;
+    margin-left: 2%;
+}
+.product .product-card img{
+    width: 100%;
+    height: 200px;
+}
+.product .product-card h2{
+    font-size: 25px;
+    color: #444;
+    margin-top: 20px;
+}
+.product .product-card p{
+    color: pink;
+    margin-top: 10px;
+    text-align: left;
+}
+.product .product-card a{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(223, 161, 171);
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+}
+.product .show-more{
+    margin-top: 540px;
+}
+.product .show-more a button{
+    color: #444;
+    padding: 14px 35px;
+    display: block;
+    border: 1px solid rgb(182, 106, 119);
+    border-radius: 4px;
+    margin: auto;
+}
+/*======product part end here=====*/
+/*======new product part start here=====*/
+.new-product{
+    padding: 50px 0;
+}
+.new-product h1{
+    text-align: center;
+    color: #444;
+    font-size: 40px;
+}
+.new-product .new-product-card{
+    width: 22%;
+    padding: 20px ;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .04);
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-left: 2%;
+    position: relative;
+}
+.new-product .new-product-card h3{
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.new-product .new-product-card img{
+    width: 100%;
+    margin: 30px auto;
+    display: block;
+    height: 200px;
+}
+.new-product .new-product-card p{
+    color: rgb(194, 131, 142);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.new-product .new-product-card button{
+    position: absolute;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    top: 8%;
+    right: 3%;
+    background-color: rgb(141, 77, 88);
+    color: #fff;
+}
+.new-product .new-product-card .hide-icon{
+    width: 100%;
+    margin-top: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.new-product .new-product-card .hide-icon a i{
+    color: #fff;
+    background-color: rgb(139, 80, 90);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 45px;
+}
+.new-product .new-product-card:hover .hide-icon{
+    opacity: 1;
+}
+/*======new product part end here=====*/
+/*======gallary part start here=====*/
+.gallary-section{
+    padding: 50px 0;
+}
+.gallary-section h1{
+    text-align: center;
+    color: #444;
+    font-size: 40px;
+}
+.gallary-section .gallary-img {
+    margin-top: 50px;
+}
+.gallary-section .gallary-img  img{
+    width: 15%;
+    height: 160px;
+    margin-left: 4%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+/*======gallary part end here=====*/
+/*======offer part start here=====*/
+.offer-section{
+    padding: 50px;
+    background-color: pink;
+}
+.offer-section .offer{
+    width: 50%;
+}
+.offer-section .offer h1{
+    color: #444;
+    font-size: 40px;
+}
+.offer-section ,.offer h1 span{
+    color: red;
+    font-size: 45px;
+}
+.offer-section .offer p{
+    color: #fff;
+    margin-top: 20px;
+}
+.offer-section .button{
+    width: 50%;
+}
+.offer-section .button a{
+    color: #fff;
+    padding: 20px 50px;
+    background-color: rgb(138, 78, 88);
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+}
+.offer-section .offer h4{
+    color: #444;
+    font-size: 20px;
+}
+
+/*======offer part end here=====*/
+/*======contact part start here=====*/
+.contact{
+    padding: 50px 0;
+}
+.contact h1{
+    color: pink;
+    font-size: 40px;
+    text-align: center;
+}
+.contact .info{
+    width: 48%;
+    margin-top: 50px;
+}
+.contact .info h1{
+    color: #444;
+    text-align: left;
+}
+.contact .info p{
+    color: rgb(151, 82, 93);
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact .contact-info{
+    margin-top: 50px;
+    width: 48%;
+}
+.contact .contact-info label{
+    color: #444;
+    margin-top: 10px;
+    display: block;
+}
+.contact .contact-info input{
+    display: block;
+    padding: 8px;
+    border: 1px solid pink;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+}
+.contact .contact-info textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid pink;
+    padding: 8px;
+    margin-top: 10px;
+}
+.contact .contact-info a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: pink;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.contact .contact-info a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(192, 133, 143);
+    z-index: -1;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+}
+.contact .contact-info a:hover::after{
+    width: 100%;
+}
+
+/*======contact part end here=====*/
+/*======footer part start here=====*/
+.footer{
+    padding: 50px 0;
+}
+.footer .gal{
+    width: 30%;
+    margin-top: 30px;
+}
+.footer .gal h5{
+    font-size: 25px;
+    color: #444;
+}
+.footer .gal img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.footer .links{
+    width: 30%;
+    margin-top: 30px;
+}
+.footer .links h5{
+    font-size: 25px;
+    color: #444;
+    text-align: center;
+}
+.footer .links a{
+    color: #000;
+    display: block;
+    margin-top: 12px;
+    font-family: popins;
+    font-size: 18px;
+    text-align: center;
+}
+.footer .get-in{
+    width: 40%;
+    margin-top: 30px;
+}
+.footer .get-in h5{
+    color: #444;
+    font-size: 25px;
+    text-align: center;
+}
+.footer .get-in i{
+    color: rgb(177, 112, 123);
+    font-size: 30px;
+    padding: 10px;
+}
+.footer .get-in span{
+    font-size: 18px;
+    width: 100%;
+}
+/*======footer part end here=====*/
+/*======footer copy part start here=====*/
+.copy-right-section{
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+.copy-right-section p{
+    color: #444;
+    font-size: 14px;
+    text-align: center;
+}
+.copy-right-section p a{
+    color: rgb(158, 81, 94);
+    font-size: 16px;
+}
+/*======footer copy part end here=====*/
